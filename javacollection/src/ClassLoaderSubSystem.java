@@ -10,6 +10,53 @@ public class ClassLoaderSubSystem {
 
         Scanner scan=new Scanner(System.in);
 
+        // Small coding task
+        int arr[]={1,6,4,7,9};
+        int indexSix=0;
+        int indexSeven = 0;
+
+        for(int i=0;i<arr.length;i++)
+        {
+            if(arr[i]==6)
+            {
+                indexSix=i;
+
+            }
+            if(arr[i]==7)
+            {
+                indexSeven=i;
+            }
+        }
+
+
+        int ans=0;
+        if(indexSix<indexSeven)
+        {
+            for(int i=indexSix-1;i>=0;i--)
+            {
+                ans+=arr[i];
+            }
+
+            for(int i=indexSeven+1;i<arr.length;i++)
+            {
+                ans+=arr[i];
+            }
+
+
+        }
+        else
+        {
+            for(int i=0;i<arr.length;i++)
+            {
+                ans+=arr[i];
+            }
+        }
+
+        System.out.println("ans " +ans);
+
+
+
+
 
         int number=99;
         System.out.println((char)number);// converting number to char
@@ -17,7 +64,7 @@ public class ClassLoaderSubSystem {
 
         // programme to reverse the element
         int value=1234;
-        int ans=0;
+        ans=0;
         while(value!=0)
         {
             ans=ans*10+value%10;

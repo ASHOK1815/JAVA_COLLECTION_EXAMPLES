@@ -18,7 +18,7 @@ public class HashMapTask {
         {
             System.out.println(i);
         }
-        System.out.println();
+
 
 
         // using of the values;

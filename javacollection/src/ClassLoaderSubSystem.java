@@ -9,6 +9,47 @@ public class ClassLoaderSubSystem {
         System.out.println(ClassLoaderSubSystem.class.getClassLoader());
 
         Scanner scan=new Scanner(System.in);
+
+
+        int number=99;
+        System.out.println((char)number);// converting number to char
+
+
+        // programme to reverse the element
+        int value=1234;
+        int ans=0;
+        while(value!=0)
+        {
+            ans=ans*10+value%10;
+            value=value/10;
+
+        }
+
+        System.out.println(ans);
+
+
+       // finding prime number between 23 to 57
+        boolean flag;
+        for(int i=23;i<=57;i++)
+        {
+            flag=true;
+            for(int j=2;j<i;j++)
+            {
+                if(i%j==0)
+                {
+                    flag=false;
+                    break;
+                }
+            }
+            if(flag)
+            {
+                System.out.println(i);
+            }
+
+        }
+
+
+        // Small programme to check whether person able to vote or not
         int age;
         char ch;
         do{
